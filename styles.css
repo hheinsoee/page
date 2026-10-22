@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #1e1e2f;
+}
+
+.logo {
+    color: #4ade80;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 24px;
+}
+
+.navbar a:hover {
+    color: #4ade80;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(135deg, #1e1e2f, #3b3b6d);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 32px;
+    color: #ccc;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: #4ade80;
+    color: #1e1e2f;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #0099ff;
+}
+
+/* Sections */
+.section {
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.light {
+    background-color: #f4f4f8;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 260px;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.2s;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.price {
+    display: block;
+    margin-top: 16px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #22c55e;
+}
+
+/* Features */
+.features {
+    list-style: none;
+    font-size: 18px;
+}
+
+.features li {
+    margin-bottom: 12px;
+}
+
+/* Form */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e1e2f;
+    color: #aaa;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+}
